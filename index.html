@@ -65,10 +65,15 @@
                     <a href="https://github.com/sanjayeedith" style="--socialAni:3"><i
                             class='bx bxl-github'></i></a>
                 </div>
+                <a href="download.php" download>
+                    <button>
+                        <span>Download CV</span>
+                    </button>
+                </a>
             </div>
         </div>
     </section>
-
+    
     <!-- About Section  -->  
 
     <section class="container" id="about">
@@ -172,7 +177,7 @@
                     <img src="images/Hurricane.png" alt="">
                     <div class="portfolio-item-info">
                         <h4>OBJECT DETECTION IN SAR SATELLITE IMAGES USING DEEP LEARNING</h4>
-                        <a href="https://github.com/sanjayeedith/Prediction-of-startup-acquisition-status-using--Django-" class="github-icon" style="--socialAni:4">
+                        <a href="https://github.com/sanjayeedith/Hurricane-Prediction-Using-AI-ML" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -182,7 +187,7 @@
                     <img src="images/SAR.jpeg" alt="">
                     <div class="portfolio-item-info">
                         <h4>HURRICAE PREDICTION USING (AI&ML)</h4>
-                        <a href="https://github.com/sanjayeedith/ATS-Tracking-LLM-Project-with-Google-Gemini-pro" class="github-icon" style="--socialAni:4">
+                        <a href="https://github.com/sanjayeedith" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -201,7 +206,7 @@
                     <img src="images/Startup.jpeg" alt="">
                     <div class="portfolio-item-info">
                         <h4>PREDICTING  STARTUP’S ACQUISITION STATUS</h4>
-                        <a href="https://github.com/sanjayeedith/ATS-Tracking-LLM-Project-with-Google-Gemini-pro" class="github-icon" style="--socialAni:4">
+                        <a href="https://github.com/sanjayeedith/Prediction-of-startup-acquisition-status-using--Django-" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -210,7 +215,7 @@
                     <img src="images/Sentiment.png" alt="">
                     <div class="portfolio-item-info">
                         <h4>SENTIMENT ANALYSIS USING NLP </h4>
-                        <a href="https://github.com/sanjayeedith/ATS-Tracking-LLM-Project-with-Google-Gemini-pro" class="github-icon" style="--socialAni:4">
+                        <a href="" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -219,7 +224,7 @@
                     <img src="images/Disease.jpeg" alt="">
                     <div class="portfolio-item-info">
                         <h4>DISEASES DETECTION SYSTEM FOR LIVESTOCK</h4>
-                        <a href="https://github.com/sanjayeedith/ATS-Tracking-LLM-Project-with-Google-Gemini-pro" class="github-icon" style="--socialAni:4">
+                        <a href="https://github.com/sanjayeedith/DISEASES-DETECTION-SYSTEM-FOR-LIVESTOCK" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -228,7 +233,7 @@
                     <img src="images/Sound Bite.jpeg" alt="">
                     <div class="portfolio-item-info">
                         <h4>SOUND BITE HEARING SYSTEM FOR BLIND AND DEAF PEOPLE (PATENT REGISTRATION) </h4>
-                        <a href="https://github.com/sanjayeedith/ATS-Tracking-LLM-Project-with-Google-Gemini-pro" class="github-icon" style="--socialAni:4">
+                        <a href="https://github.com/sanjayeedith/SOUND-BITE-HEARING-SYSTEM-FOR-BLIND-AND-DEAF-PEOPLE" class="github-icon" style="--socialAni:4">
                             <i class='bx bxl-github'></i> <!-- GitHub icon -->
                         </a>
                     </div>
@@ -262,7 +267,6 @@
     </section>
     
     
-
     <script>
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
@@ -280,6 +284,20 @@
                 localStorage.setItem('darkMode', 'disabled');
             }
         });
+    </script>
+    <script>
+        const syncPointer = ({ x: pointerX, y: pointerY }) => {
+            const x = pointerX.toFixed(2)
+            const y = pointerY.toFixed(2)
+            const xp = (pointerX / window.innerWidth).toFixed(2)
+            const yp = (pointerY / window.innerHeight).toFixed(2)
+            document.documentElement.style.setProperty('--x', x)
+            document.documentElement.style.setProperty('--xp', xp)
+            document.documentElement.style.setProperty('--y', y)
+            document.documentElement.style.setProperty('--yp', yp)
+        }
+        document.body.addEventListener('pointermove', syncPointer)
+
     </script>
 </body>
 
