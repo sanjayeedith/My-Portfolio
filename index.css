@@ -154,6 +154,7 @@ li a:hover {
     font-size: 1.5rem;
     margin-top: 0.5rem;
     font-weight: 500;
+    
 }
 
 /* Portfolio Section */
@@ -205,6 +206,9 @@ li a:hover {
     font-size: 1rem;
     color: #777;
 }
+.github-icon i {
+    font-size: 55px; /* Adjust the size as needed */
+}
 
 @media screen and (max-width: 768px) {
     .skills-container {
@@ -239,7 +243,6 @@ li a:hover {
         font-size: 0.9rem;
     }
 }
-
 .main {
     padding: 6rem 0;
     display: grid;
@@ -432,7 +435,6 @@ li a:hover {
         transform: translateX(0);
     }
 */
-} 
 @keyframes imageAni {
     0% {
         opacity: 0;
